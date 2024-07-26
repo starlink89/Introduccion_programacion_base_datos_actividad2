@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3 - Actividad 2 - Ejercicios de Entidad, relación y cardinalidad</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <H2>Ejercicio 1: Sistema de Gestión de una Universidad</H1>
+    <h3>Diseña un modelo entidad-relación para un sistema de gestión de una universidad. Considera las siguientes entidades y relaciones:</h2>
+    <h4>Entidades</h4>
+
+    <h5>Estudiante</h5>
+    <table border="3">
+        <tr>
+            <td><u>id_estudiante</u></td>
+            <td>nombre_estudiante</td>
+            <td>apellido_estudiante</td>
+            <td>correo_estudiante</td>
+            <td><u><b>id_curso</b></u></td>
+        </tr>
+        <tr>
+            <td>id_estudiante</td>
+            <td>nombre_estudiante</td>
+            <td>apellido_estudiante</td>
+            <td>correo_estudiante</td>
+            <td>id_curso</td>
+        </tr>
+    </table>
+
+    <h5>Profesor</h5>
+    <table border="3">
+        <tr>
+            <td><u>id_profesor</u></td>
+            <td>nombre_profesor</td>
+            <td>apellido_profesor</td>
+            <td>correo_profesor</td>
+        </tr>
+        <tr>
+            <td>id_estudiante</td>
+            <td>nombre_estudiante</td>
+            <td>apellido_estudiante</td>
+            <td>correo_estudiante</td>
+        </tr>
+    </table>
+
+    <h5>Curso</h5>
+    <table border="3">
+        <tr>
+            <td><u>id_curso</u></td>
+            <td>nombre_curso</td>
+            <td><u><b>id_profesor</b></u></td>
+            <td><u><b>id_departamento</b></u></td>
+        </tr>
+        <tr>
+            <td>id_estudiante</td>
+            <td>nombre_estudiante</td>
+            <td>apellido_estudiante</td>
+            <td>correo_estudiante</td>
+        </tr>
+    </table>
+
+    <h5>Departamento</h5>
+    <table border="3">
+        <tr>
+            <td><u>id_departamento</u></td>
+            <td>nombre_departamento</td>
+        </tr>
+        <tr>
+            <td>id_estudiante</td>
+            <td>nombre_estudiante</td>
+        </tr>
+    </table>
+
+
+    <h4>Relaciones</h4>
+    <ul>
+        <li>Estudiante N:1 Curso</li>
+        <li>Curso N:1 Profesor</li>
+        <li>Departamento 1:N Curso</li>
+    </ul>
+    <h4>Imagenes del proceso en Dbeaver</h4>
+    <img src="Universidad1.png" alt="">
+    <img src="Universidad2.png" alt="">
+    <img src="Universidad3.png" alt="">
+    <img src="Universidad4.png" alt="">
+    <img src="Universidad5.png" alt="">
+    <img src="Universidad6.png" alt="">
+    <img src="Universidad7.png" alt="">
+    <img src="Universidad8.png" alt="">
+    <img src="Universidad9.png" alt="">
+    <img src="Universidad10.png" alt="">
+
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    <H2>Ejercicio 2: Sistema de Reservas de Hotel</H1>
+        <h3>Crea un modelo entidad-relación para un sistema de reservas de hotel. Incluye las siguientes entidades y relaciones:</h2>
+        <h4>Entidades</h4>
+    
+        <h5>Hotel</h5>
+        <table border="3">
+            <tr>
+                <td><u>id_hotel</u></td>
+                <td>nombre_hotel</td>
+                <td>localidad_hotel</td>
+            </tr>
+            <tr>
+                <td>id_estudiante</td>
+                <td>nombre_estudiante</td>
+                <td>apellido_estudiante</td>
+            </tr>
+        </table>
+    
+        <h5>Habitacion</h5>
+        <table border="3">
+            <tr>
+                <td><u>id_habitacion</u></td>
+                <td>numero_habitacion</td>
+                <td><u><b>id_hotel</b></u></td>
+                </tr>
+            <tr>
+                <td>id_estudiante</td>
+                <td>nombre_estudiante</td>
+                <td>apellido_estudiante</td>
+            </tr>
+        </table>
+    
+        <h5>Cliente</h5>
+        <table border="3">
+            <tr>
+                <td><u>id_cliente</u></td>
+                <td>nombre_cliente</td>
+                <td>apellido_cliente</td>
+                <td>correo_cliente</td>
+                <td><u><b>id_habitacion</b></u></td>
+            </tr>
+            <tr>
+                <td>id_estudiante</td>
+                <td>nombre_estudiante</td>
+                <td>apellido_estudiante</td>
+                <td>correo_estudiante</td>
+                <td>correo_estudiante</td>
+            </tr>
+        </table>
+      
+    
+        <h4>Relaciones</h4>
+        <ul>
+            <li>Hotel 1:N Habitacion</li>
+            <li>Cliente N:1 Hotel</li>
+            <li>Cliente 1:1 Habitacion</li>
+        </ul>
+        <h4>Imagenes del proceso en Dbeaver</h4>
+        <img src="Hotel1.png" alt="">
+        <img src="Hotel2.png" alt="">
+        <img src="Hotel3.png" alt="">
+        <img src="Hotel4.png" alt="">
+        <img src="Hotel5.png" alt="">
+        <img src="Hotel6.png" alt="">
+        <img src="Hotel7.png" alt="">
+        <img src="Hotel8.png" alt="">
+        <img src="Hotel9.png" alt="">
+
+
+</body>
+</html>
